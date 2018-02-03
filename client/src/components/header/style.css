@@ -1,8 +1,8 @@
 .header {
-	position: fixed;
-	left: 0;
-	top: 0;
-	width: 100%;
+	position: relative;
+	/*left: 0;*/
+	/*top: 0;*/
+	/*width: 100%;*/
 	/* height: 56px; */
 	padding: 0;
 	background: rgb(47, 133, 58);

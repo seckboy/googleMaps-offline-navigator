@@ -64,7 +64,7 @@ app.use(morgan('dev'));
 
 // API Routes
 app.use('/', require('./routes/index'));
-app.use('/map', require('./routes/map'));
+app.use('/showMap', require('./routes/map'));
 app.use('/search', require('./routes/search'));
 app.use('/users', require('./routes/users'));
 
