@@ -41,6 +41,8 @@ export default class Profile extends Component {
 					{' '}
 					Clicked {count} times.
 				</p>
+
+				<p><a href="/showMap">Back to map</a></p>
 			</div>
 		);
 	}

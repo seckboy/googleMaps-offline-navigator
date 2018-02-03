@@ -12,7 +12,8 @@ export default class MapHeader extends Component {
                 { ({ matches, path, url }) => profileHeader.includes(path) && (
                     <header class={style.header}>
                         <nav>
-                            <input type="text" name="search"/> <input type="submit" value="Search"/>
+                            <input type="text" name="search"/> <input type="submit" value="Search"/> &nbsp;
+                            <a href="/profile">Profile</a> &nbsp;
                             <a href="/">Sign out</a>
                         </nav>
                     </header>
