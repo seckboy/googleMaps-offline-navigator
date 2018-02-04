@@ -6,11 +6,27 @@ import assertJsx from 'preact-jsx-chai';
 chai.use(assertJsx);
 
 ///Tests
-import Header from '../src/components/header';
+import NonMapHeader from '../src/components/Header/NonMapHeader';
 
-describe('Header', () => {
-	it('passes', () => {
-		expect(<Header />, 'Why not work?').to.contain(<h1>There and Back Again!</h1>);
-	});
+describe('NonMapHeader', () => {
+    it('passes', () => {
+        expect(<NonMapHeader />, 'Why not work?').to.contain(<h1>There and Back Again!</h1>);
+    });
+});
+
+import MapHeader from '../src/components/Header/MapHeader';
+
+describe('MapHeader', () => {
+    it('passes', () => {
+        expect(<MapHeader />, 'Search should be present').to.contain("Search:");
+    });
+});
+
+import GoogleMap from '../src/components/GoogleMap';
+
+describe('GoogleMap', () => {
+    it('passes', () => {
+        expect(<GoogleMap />, 'Placeholder for map should be present').to.contain(<div>Placeholder for map</div>);
+    });
 });
 
