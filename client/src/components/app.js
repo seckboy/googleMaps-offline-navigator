@@ -1,12 +1,12 @@
 import { h, Component } from 'preact';
 import { Router } from 'preact-router';
 
-import GoogleMap from './GoogleMap';
-import Header from './header';
+import ForgotPassword from '../routes/forgot-password';
 import Home from '../routes/home';
 import Profile from '../routes/profile';
-// import Home from 'async!../routes/home';
-// import Profile from 'async!../routes/profile';
+import Register from '../routes/register';
+import ResetPassword from '../routes/reset-password';
+import ShowMap from '../routes/show-map';
 
 export default class App extends Component {
 	/** Gets fired when the route changes.
@@ -20,12 +20,14 @@ export default class App extends Component {
 	render() {
 		return (
 			<div id="app">
-				<Header />
 				<Router onChange={this.handleRoute}>
 					<Home path="/" />
-					<GoogleMap path="/showMap" />
+					<ForgotPassword path="/forgot-password" />
 					<Profile path="/profile/" user="me" />
 					<Profile path="/profile/:user" />
+					<Register path="/register" />
+					<ResetPassword path="/reset-password" />
+					<ShowMap path="/show-map" />
 				</Router>
 			</div>
 		);

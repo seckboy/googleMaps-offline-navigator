@@ -10,25 +10,22 @@ import 'preact-material-components/Theme/style.css';
 import TextField from 'preact-material-components/TextField';
 import 'preact-material-components/TextField/style.css';
 
-export default class Home extends Component {
+export default class ForgotPassword extends Component {
 	render() {
 		return (
 			<div>
 				<NonMapHeader/>
-				<h1>Home</h1>
-				<form action="/show-map">
+				<h1>We'll send you a password.</h1>
+				<form action="/reset-password">
 					<div>
 						<TextField label="Email" name="email"/>
 					</div>
-					<div>
-						<TextField label="Password" name="password" type="password"/>
-					</div>
 					<Button unelevated className="mdc-theme--primary-bg">
-						Sign In
+						Email temporary password
 					</Button>
 					<br/>
 					<br/><Link activeClassName={style.active} href="/register">register</Link>
-					<br/><Link activeClassName={style.active} href="/forgot-password">forgot password?</Link>
+					<br/><Link activeClassName={style.active} href="/">sign in</Link>
 				</form>
 			</div>
 		);

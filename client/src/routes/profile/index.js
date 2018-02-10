@@ -1,6 +1,7 @@
 import { h, Component } from 'preact';
 import style from './style';
 import Favorites from '../../components/favorites';
+import NonMapHeader from '../../components/Header/NonMapHeader';
 
 export default class Profile extends Component {
 	state = {
@@ -29,6 +30,7 @@ export default class Profile extends Component {
 	render({ user }, { time }) {
 		return (
 			<div class={style.profile}>
+				<NonMapHeader/>
 				<h1>Profile: {user}</h1>
 				<p>This is the user profile for a user named { user }.</p>
 
